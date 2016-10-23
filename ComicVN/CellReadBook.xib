@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CellReadBook" customModule="ComicVN" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CellReadBook" customModule="ComicVN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="241" height="216"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="241" height="216"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYv-PQ-kwU">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eVr-1O-wfN"/>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="eVr-1O-wfN" firstAttribute="width" secondItem="eYv-PQ-kwU" secondAttribute="width" id="4ir-9n-3Ai"/>
+                            <constraint firstItem="eVr-1O-wfN" firstAttribute="leading" secondItem="eYv-PQ-kwU" secondAttribute="leading" id="76N-ax-nZa"/>
+                            <constraint firstItem="eVr-1O-wfN" firstAttribute="top" secondItem="eYv-PQ-kwU" secondAttribute="top" id="VGf-CF-ksA"/>
+                            <constraint firstAttribute="bottom" secondItem="eVr-1O-wfN" secondAttribute="bottom" id="oBv-fs-RRz"/>
+                            <constraint firstAttribute="trailing" secondItem="eVr-1O-wfN" secondAttribute="trailing" id="vgo-9J-fyi"/>
+                            <constraint firstItem="eVr-1O-wfN" firstAttribute="height" secondItem="eYv-PQ-kwU" secondAttribute="height" id="yo7-Oj-Oy8"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="eYv-PQ-kwU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1IZ-XB-Csr"/>
+                <constraint firstItem="eYv-PQ-kwU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CR2-gJ-pDi"/>
+                <constraint firstAttribute="bottom" secondItem="eYv-PQ-kwU" secondAttribute="bottom" id="WKJ-hL-nRB"/>
+                <constraint firstAttribute="trailing" secondItem="eYv-PQ-kwU" secondAttribute="trailing" id="mLi-xD-FgC"/>
+            </constraints>
+            <size key="customSize" width="241" height="216"/>
+            <connections>
+                <outlet property="imageViews" destination="eVr-1O-wfN" id="XtR-3B-OV4"/>
+                <outlet property="scrollView" destination="eYv-PQ-kwU" id="c8R-cZ-Sd5"/>
+            </connections>
+            <point key="canvasLocation" x="-62.5" y="85"/>
+        </collectionViewCell>
+    </objects>
+</document>

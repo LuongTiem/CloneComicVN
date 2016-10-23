@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="127" id="KGk-i7-Jjw" customClass="CellTableView" customModule="ComicVN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="370" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chobeo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oUM-4D-dBe">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="103" id="JFx-ol-hci"/>
+                            <constraint firstAttribute="height" constant="103" id="dJr-G1-Ggl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số Chap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jm-vb-py7">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lượt View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkN-Mm-87j">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="View" translatesAutoresizingMaskIntoConstraints="NO" id="qub-yj-AUT"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên Truyện" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avz-Re-3bu">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IkN-Mm-87j" firstAttribute="leading" secondItem="qub-yj-AUT" secondAttribute="trailing" constant="15" id="IBU-cg-gR9"/>
+                    <constraint firstItem="4jm-vb-py7" firstAttribute="top" secondItem="avz-Re-3bu" secondAttribute="bottom" constant="10" id="L3t-4K-Grp"/>
+                    <constraint firstAttribute="trailing" secondItem="avz-Re-3bu" secondAttribute="trailing" constant="8" id="ORc-8p-jvo"/>
+                    <constraint firstItem="oUM-4D-dBe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="RYZ-fq-wYZ"/>
+                    <constraint firstItem="IkN-Mm-87j" firstAttribute="centerY" secondItem="qub-yj-AUT" secondAttribute="centerY" id="T5N-E8-iRV"/>
+                    <constraint firstItem="oUM-4D-dBe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="W3D-6f-2p2"/>
+                    <constraint firstItem="4jm-vb-py7" firstAttribute="trailing" secondItem="avz-Re-3bu" secondAttribute="trailing" id="cBg-96-fW8"/>
+                    <constraint firstItem="qub-yj-AUT" firstAttribute="top" secondItem="4jm-vb-py7" secondAttribute="bottom" constant="10" id="cOO-PI-KRa"/>
+                    <constraint firstItem="qub-yj-AUT" firstAttribute="leading" secondItem="4jm-vb-py7" secondAttribute="leading" id="dVB-4H-ShA"/>
+                    <constraint firstItem="avz-Re-3bu" firstAttribute="leading" secondItem="oUM-4D-dBe" secondAttribute="trailing" constant="8" id="ehC-gG-Aui"/>
+                    <constraint firstItem="4jm-vb-py7" firstAttribute="leading" secondItem="avz-Re-3bu" secondAttribute="leading" id="h9j-jP-g9S"/>
+                    <constraint firstItem="avz-Re-3bu" firstAttribute="top" secondItem="oUM-4D-dBe" secondAttribute="top" id="ihX-0U-J6d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chap_Manga" destination="4jm-vb-py7" id="j4e-gQ-Y3e"/>
+                <outlet property="im_view" destination="oUM-4D-dBe" id="Ar1-KO-cgx"/>
+                <outlet property="lb_View" destination="IkN-Mm-87j" id="UWY-Kg-hYp"/>
+                <outlet property="name_Manga" destination="avz-Re-3bu" id="dk5-rJ-Ca9"/>
+            </connections>
+            <point key="canvasLocation" x="58" y="145"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="View" width="30" height="30"/>
+        <image name="chobeo.jpg" width="225" height="225"/>
+    </resources>
+</document>

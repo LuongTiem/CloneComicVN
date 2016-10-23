@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="KGk-i7-Jjw" customClass="NewestCell" customModule="ComicVN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="322" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chobeo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gez-en-iEK">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="103" id="LJf-EA-4zG"/>
+                            <constraint firstAttribute="height" constant="103" id="Mkg-eG-jFc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ten Truyen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTm-hf-bsy">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So Chap Moi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFi-Jf-O9C">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngay Update" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3k-8k-50h">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AFi-Jf-O9C" firstAttribute="centerY" secondItem="gez-en-iEK" secondAttribute="centerY" id="1bZ-Hh-jvU"/>
+                    <constraint firstItem="gez-en-iEK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="G1Z-Ue-ocn"/>
+                    <constraint firstItem="b3k-8k-50h" firstAttribute="leading" secondItem="AFi-Jf-O9C" secondAttribute="leading" id="IcT-qg-Foz"/>
+                    <constraint firstAttribute="trailing" secondItem="sTm-hf-bsy" secondAttribute="trailing" constant="11" id="K4S-cC-Sla"/>
+                    <constraint firstItem="AFi-Jf-O9C" firstAttribute="leading" secondItem="sTm-hf-bsy" secondAttribute="leading" id="WJ5-YQ-DxC"/>
+                    <constraint firstItem="gez-en-iEK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dIM-uD-ZCd"/>
+                    <constraint firstItem="b3k-8k-50h" firstAttribute="top" secondItem="AFi-Jf-O9C" secondAttribute="bottom" constant="11" id="gFx-1q-o4B"/>
+                    <constraint firstItem="sTm-hf-bsy" firstAttribute="leading" secondItem="gez-en-iEK" secondAttribute="trailing" constant="8" id="gch-4o-GOG"/>
+                    <constraint firstAttribute="trailing" secondItem="b3k-8k-50h" secondAttribute="trailing" constant="11" id="mac-6S-fwd"/>
+                    <constraint firstItem="AFi-Jf-O9C" firstAttribute="top" secondItem="sTm-hf-bsy" secondAttribute="bottom" constant="11" id="sgk-zz-Gn6"/>
+                    <constraint firstAttribute="trailing" secondItem="AFi-Jf-O9C" secondAttribute="trailing" constant="11" id="zMV-9d-pe5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="im_view" destination="gez-en-iEK" id="IJh-Kq-aCr"/>
+                <outlet property="nameManga" destination="sTm-hf-bsy" id="Fmr-cZ-qcM"/>
+                <outlet property="numberNewchap" destination="AFi-Jf-O9C" id="XlN-vS-kwl"/>
+                <outlet property="update" destination="b3k-8k-50h" id="KT7-G3-l3e"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="115.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Chobeo.jpg" width="626" height="626"/>
+    </resources>
+</document>

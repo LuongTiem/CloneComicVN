@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="KGk-i7-Jjw" customClass="CellMostView" customModule="ComicVN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="339" height="117"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chobeo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2Cu-PU-hRy">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="103" id="Ufy-cq-MGd"/>
+                            <constraint firstAttribute="width" constant="103" id="nvn-aQ-uPW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbL-rJ-fsM">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQf-SZ-brg">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="View.png" translatesAutoresizingMaskIntoConstraints="NO" id="AhP-bQ-fCQ">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="ABt-Ht-CrF"/>
+                            <constraint firstAttribute="height" constant="27" id="mj0-in-0hG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9o-XZ-Kzb">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AhP-bQ-fCQ" firstAttribute="leading" secondItem="bbL-rJ-fsM" secondAttribute="leading" id="2GE-8B-f5u"/>
+                    <constraint firstItem="2Cu-PU-hRy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2uU-Cm-cEY"/>
+                    <constraint firstItem="bbL-rJ-fsM" firstAttribute="centerY" secondItem="2Cu-PU-hRy" secondAttribute="centerY" id="4za-NC-gy0"/>
+                    <constraint firstItem="z9o-XZ-Kzb" firstAttribute="centerY" secondItem="AhP-bQ-fCQ" secondAttribute="centerY" id="5Vb-kW-BCB"/>
+                    <constraint firstAttribute="trailing" secondItem="z9o-XZ-Kzb" secondAttribute="trailing" constant="10" id="Cdj-Q5-swB"/>
+                    <constraint firstItem="bbL-rJ-fsM" firstAttribute="top" secondItem="vQf-SZ-brg" secondAttribute="bottom" constant="11" id="NsH-kY-TcR"/>
+                    <constraint firstItem="AhP-bQ-fCQ" firstAttribute="top" secondItem="bbL-rJ-fsM" secondAttribute="bottom" constant="11" id="WLc-eM-TI4"/>
+                    <constraint firstAttribute="trailing" secondItem="bbL-rJ-fsM" secondAttribute="trailing" constant="8" id="YN1-ms-Nzp"/>
+                    <constraint firstItem="bbL-rJ-fsM" firstAttribute="leading" secondItem="2Cu-PU-hRy" secondAttribute="trailing" constant="10" id="dgx-Xh-tgS"/>
+                    <constraint firstItem="vQf-SZ-brg" firstAttribute="trailing" secondItem="bbL-rJ-fsM" secondAttribute="trailing" id="f7G-if-OB2"/>
+                    <constraint firstItem="2Cu-PU-hRy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="hHp-Pq-ZpC"/>
+                    <constraint firstItem="vQf-SZ-brg" firstAttribute="leading" secondItem="bbL-rJ-fsM" secondAttribute="leading" id="qqI-sA-riq"/>
+                    <constraint firstItem="z9o-XZ-Kzb" firstAttribute="leading" secondItem="AhP-bQ-fCQ" secondAttribute="trailing" constant="10" id="yAB-VY-XzU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="img" destination="2Cu-PU-hRy" id="7Pc-Y9-fGh"/>
+                <outlet property="nameManga" destination="vQf-SZ-brg" id="ncQ-qU-PKG"/>
+                <outlet property="numberChap" destination="bbL-rJ-fsM" id="p5N-fd-VH2"/>
+                <outlet property="viewLb" destination="z9o-XZ-Kzb" id="NWs-Kw-Aby"/>
+            </connections>
+            <point key="canvasLocation" x="5.5" y="73"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Chobeo.jpg" width="626" height="626"/>
+        <image name="View.png" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CellChapter" customModule="ComicVN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chap 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="did-7N-tB7">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="DB6-Nx-z6x"/>
+                            <constraint firstAttribute="width" constant="170" id="fD9-se-xyb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEJ-lq-azV">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="gbT-7V-uOb"/>
+                            <constraint firstAttribute="height" constant="21" id="tDb-p7-Job"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="DownLoad Chapter"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="View" translatesAutoresizingMaskIntoConstraints="NO" id="WcT-5A-Bvi">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="B0h-4Y-PWf"/>
+                            <constraint firstAttribute="width" constant="32" id="zTg-Mq-5pY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhF-V1-P0F">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="fiq-Oa-2MO"/>
+                            <constraint firstAttribute="height" constant="21" id="vBb-mv-TfY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="did-7N-tB7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="7ZS-KX-Qde"/>
+                    <constraint firstItem="XEJ-lq-azV" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="Bbo-id-6RF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BhF-V1-P0F" secondAttribute="bottom" constant="3" id="JFn-6G-cmC"/>
+                    <constraint firstItem="XEJ-lq-azV" firstAttribute="leading" secondItem="WcT-5A-Bvi" secondAttribute="trailing" constant="8" id="NBa-jX-XQr"/>
+                    <constraint firstItem="did-7N-tB7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="XYV-Ki-mFn"/>
+                    <constraint firstItem="XEJ-lq-azV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="nCD-sQ-P9X"/>
+                    <constraint firstItem="XEJ-lq-azV" firstAttribute="leading" secondItem="BhF-V1-P0F" secondAttribute="trailing" constant="39" id="pwg-T9-UPj"/>
+                    <constraint firstItem="XEJ-lq-azV" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="re1-Vl-eUS"/>
+                    <constraint firstAttribute="bottom" secondItem="WcT-5A-Bvi" secondAttribute="bottom" constant="7" id="w6M-x8-ZM7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="did-7N-tB7" secondAttribute="bottom" constant="3" id="z0B-jX-CMQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="numb_chap" destination="did-7N-tB7" id="MjO-Qi-zz3"/>
+                <outlet property="numb_view" destination="BhF-V1-P0F" id="FJQ-oh-X4e"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DownLoad Chapter" width="30" height="30"/>
+        <image name="View" width="30" height="30"/>
+    </resources>
+</document>
