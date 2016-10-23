@@ -206,7 +206,7 @@ extension TabNewestVC: UICollectionViewDataSource, UICollectionViewDelegate {
         return cell
     }
     
-    //-- begin
+    //-- begin----
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let urlString = loadURLImage(url: slideStories[indexPath.item].thumbnail!)
         let url = URL(string: urlString)!
